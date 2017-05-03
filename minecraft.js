@@ -1,4 +1,4 @@
-const minecraftAPI = 'https://dags.me/minecraft/mc.ardacraft.me';
+const minecraftAPI = 'https://api.dags.me/minecraft/mc.ardacraft.me';
 const minecraftAPI2 = 'https://status.ardacraft.io/';
 const minecraftLink = 'https://ardacraft.me/map';
 
