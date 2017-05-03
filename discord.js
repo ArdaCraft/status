@@ -1,4 +1,4 @@
-const discordAPI = 'https://dags.me/discord/207677939146424331';
+const discordAPI = 'https://api.dags.me/discord/207677939146424331';
 
 function initDiscord(title, content) {
     query(discordAPI, title, content, drawDiscord);
