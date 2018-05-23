@@ -22,7 +22,7 @@ function drawMinecraft(title, content, response) {
     var title = createMCTitle(players);
     minecraftTitle.appendChild(title);
 
-    var sample = players['players'];
+    var sample = players['sample'];
     if (sample !== undefined) {
         for (var i = 0; i < sample.length; i++) {
             var player = sample[i];
