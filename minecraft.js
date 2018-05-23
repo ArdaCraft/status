@@ -1,4 +1,4 @@
-const minecraftAPI = 'https://api.dags.me/minecraft/mc.ardacraft.me';
+const minecraftAPI = 'https://ping.dags.me/mc.ardacraft.me';
 const minecraftAPI2 = 'https://status.ardacraft.io/';
 const minecraftLink = 'https://ardacraft.me/map';
 
@@ -18,14 +18,15 @@ function drawMinecraft(title, content, response) {
     clear(minecraftTitle);
     clear(minecraftContent);
 
-    var title = createMCTitle(status);
+    var players = status['players'];
+    var title = createMCTitle(players);
     minecraftTitle.appendChild(title);
 
-    var players = status['players'];
-    if (players !== undefined) {
-        for (var i = 0; i < players.length; i++) {
-            var player = players[i];
-            var user = createMCUser(player);
+    var sample = players['players'];
+    if (sample !== undefined) {
+        for (var i = 0; i < sample.length; i++) {
+            var player = sample[i];
+            var user = createMCUser(player['name']);
             minecraftContent.appendChild(user);
         }
     }
